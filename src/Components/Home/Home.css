@@ -1,0 +1,15 @@
+#bio {
+	text-align: center;
+	font-size: 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bolder;
+}
+
+#box {
+	outline: solid 1px #1f85de;
+	text-align: center;
+}
+
+#outer {
+    outline: solid 1px #1F85DE;
+}
