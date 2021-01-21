@@ -31,24 +31,108 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			<div className="is-12" style={{ height: "30px" }}></div>
+			<div className="is-12" style={{ height: "40px" }}></div>
+
+			<div className="columns">
+				<div className="column"></div>
+				<div
+					className="column"
+					style={{
+						textAlign: "center",
+						fontSize: "24px",
+						fontFamily: "Georgia, serif",
+						fontWeight: "bolder",
+					}}
+				>
+					Name
+				</div>
+				<div
+					className="column"
+					style={{
+						textAlign: "center",
+						fontSize: "24px",
+						fontFamily: "Georgia, serif",
+						fontWeight: "bolder",
+					}}
+				>
+					Age
+				</div>
+				<div
+					className="column"
+					style={{
+						textAlign: "center",
+						fontSize: "24px",
+						fontFamily: "Georgia, serif",
+						fontWeight: "bolder",
+					}}
+				>
+					Phone
+				</div>
+				<div
+					className="column"
+					style={{
+						textAlign: "center",
+						fontSize: "24px",
+						fontFamily: "Georgia, serif",
+						fontWeight: "bolder",
+					}}
+				>
+					Country
+				</div>
+			</div>
 
 			<div className="container">
 				{employees.map((employee) => (
-					<div className="columns">
-						<div className="column">
+					<div
+						className="columns"
+						style={{ outline: "solid 1px #1F85DE" }}
+					>
+						<div
+							className="column"
+							style={{ outline: "solid 1px #1F85DE" }}
+						>
 							{" "}
 							<img
 								alt={employee.name.first}
 								src={employee.picture.medium}
 							></img>
 						</div>
-						<div className="column">
+						<div
+							className="column"
+							style={{
+								outline: "solid 1px #1F85DE",
+								textAlign: "center",
+							}}
+						>
 							{employee.name.first} {employee.name.last}
 						</div>
-						<div className="column">{employee.dob.age}</div>
-						<div className="column">{employee.phone}</div>
-						<div className="column">{employee.location.country}</div>
+						<div
+							className="column"
+							style={{
+								outline: "solid 1px #1F85DE",
+								textAlign: "center",
+							}}
+						>
+							{employee.dob.age}
+						</div>
+						<div
+							className="column"
+							style={{
+								outline: "solid 1px #1F85DE",
+								textAlign: "center",
+							}}
+						>
+							{employee.phone}
+						</div>
+						<div
+							className="column"
+							style={{
+								outline: "solid 1px #1F85DE",
+								textAlign: "center",
+							}}
+						>
+							{employee.location.country}
+						</div>
 					</div>
 				))}
 			</div>
